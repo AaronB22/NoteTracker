@@ -1,11 +1,11 @@
 //dependencies
 const express=require('express');
 const app=express();
-const port=3000;
 const path= require('path')
 const fs = require('fs');
 const jsonFile = fs.readFileSync('./Develop/db/db.json')
 const parsedFile= JSON.parse(jsonFile)
+const port=process.env.PORT || 3001;
 
 
 //uses the Develop folder to allow the js and css files to run
